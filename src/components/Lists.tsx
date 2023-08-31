@@ -2,6 +2,7 @@ import React from 'react';
 import {List} from "./List";
 import {useTypedSelector} from "../hooks";
 
+
 interface ListsProps {
     handleChecked: (id: number) => void
     handleRemove:  (id: number) => void

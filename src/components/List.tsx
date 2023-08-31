@@ -3,6 +3,7 @@ import ReactLoading from "react-loading";
 import {Button} from "./Button";
 import {InputCheck} from "./InputCheck";
 
+
 interface ListProps {
     id: number
     deleting: boolean
