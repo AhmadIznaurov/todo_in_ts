@@ -15,20 +15,6 @@ code {
     monospace;
 }
 
-.App {
-  text-align: center;
-  margin: 10px auto;
-}
-
-.preloader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 54px;
-  font-weight: bold;
-  margin-top: 400px;
-}
-
 ol {
   width: 700px;
   margin: 30px auto;
