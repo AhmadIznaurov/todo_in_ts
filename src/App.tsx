@@ -4,6 +4,7 @@ import ReactLoading from 'react-loading';
 import {Lists} from "./components/Lists";
 import {useTypedSelector} from "./hooks";
 import {useActions} from "./hooks/useActions";
+import styles from './styles/app.module.scss';
 
 
 
@@ -25,7 +26,7 @@ export const App: React.FC = () => {
 
          const Preloader = () => {
              return (
-                 <div className="preloader">
+                 <div className={styles.preloader}>
                      <ReactLoading type={'spin'} color={'red'} height={200} width={200} />
                  </div>
              );
@@ -50,7 +51,7 @@ export const App: React.FC = () => {
     }
 
     return (
-        <div className="App">
+        <div className={styles.App}>
             <button onClick={handleClick}>TOUCH HERE</button>
             { waiting ? <Preloader /> : (
                 <Lists handleRemove={handleRemove} handleChecked={handleChecked} />
